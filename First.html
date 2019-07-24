@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Website Title</title>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,">
+    <link rel="stylesheet" href="css/w3styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+
+    <script type="text/javascript"></script>
+    
+
+    
+    <div >
+        <h1>Generic Medicines</h1>
+
+    </div>
+    <div>
+    <header>
+       
+        <nav class="navbar navbar-expand-lg navbar-light default-color ">
+            <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">WebSite Name</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Screen1.jsp">Screen1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Screen2.jsp">Screen 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Screen3.jsp">Screen 3</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="Login.html">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Login</button>
+
+
+                </form>
+            </div>
+        </nav>           
+       
+    </header>
+    </div>
+    <div class="sidenav w3-blue" >
+       
+        <button class="dropdown-btn">Client 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Add Client</a>
+            <a href="#">Client Desc</a>
+            <a href="#">Dashboard</a>
+          </div>
+        <button class="dropdown-btn">Product 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Add Product</a>
+          <a href="#">Product Details</a>
+          <a href="#">invoice</a>
+        </div>
+        <button class="dropdown-btn">Company
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Add Company</a>
+            <a href="#">Contact</a>
+            <a href="#">Details</a>
+          </div>
+       
+    </div>
+    <div class="wrapper" >
+    <div class="container challenge-page-wrap panes-container">
+        <div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Sachin Tendulkar</h3>
+                        <p>Sachin Ramesh Tendulkar is a former Indian international cricketer and a former captain of the Indian national team. He is widely regarded as one of the greatest batsman in the history of cricket. He is the highest run scorer of all time in International cricket</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Abdul Kalam</h3>
+                        <p>Avul Pakir Jainulabdeen Abdul Kalam was an aerospace scientist who served as the 11th President of India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Swami Vivekananda</h3>
+                        <p>He was a key figure in the introduction of the Indian philosophies of Vedanta and Yoga to the Western world[6][7] and is credited with raising interfaith awareness, bringing Hinduism to the status of a major world religion during the late 19th century.</p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+
+</div>
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+</body>
+</html>
