@@ -1,0 +1,27 @@
+package list;
+
+import java.util.NavigableSet;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class Navigable {
+	public static void main(String[] args) {
+		NavigableSet ns=new TreeSet();
+		ns.add("abc");
+		ns.add("xyz");
+		ns.add("mno");
+		ns.add("poq");
+		System.out.println("elements are:");
+		for(Object object:ns)
+		{
+			System.out.println(object);
+		}
+		System.out.println(" element:" +ns.pollFirst());
+		System.out.println(" element:" +ns.pollLast());
+		System.out.println(" element:" +ns.lower("xyz"));
+		System.out.println(" element:" +ns.floor("poq"));
+		System.out.println(" element:" +ns.ceiling("xyz"));
+		System.out.println(" element:" +ns.higher("abc"));
+	
+}
+}
